@@ -5,13 +5,7 @@ import Portfolio from "./components/Portfolio"
 import { useSelector } from "react-redux"
 
 const Home = () => {
-  const [showModal, setShowModal] = useState(true);
   const { isShowModal } = useSelector(state => state.theModal)
-  console.log( isShowModal );
-
-  const showModalHandler = () => {
-    setShowModal(prev => !prev);
-  }
 
   return (
     <>

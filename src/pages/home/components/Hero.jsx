@@ -1,11 +1,20 @@
+import { useDispatch } from "react-redux"
+import { modalActions } from "../../../redux/modal";
+
 const Hero = () => {
+  const dispatch = useDispatch();
+
+  const showModalHandler = () => {
+    dispatch(modalActions.toggleModal());
+  }
+
   return (
     <section className='flex flex-col items-center px-4 mx-auto mb-12 max-w-screen-2xl'>
       {/* <Image
       src={portraitImage}
       className='mb-10 max-w-[150px] rounded-full shadow-md'
     /> */}
-      <h1 className='mb-4'>Donny Rendi</h1>
+      <h1 className='mb-4' onClick={showModalHandler}>Donny Rendi</h1>
       <h4 className='mb-10'>Frontend React Next.JS Developer</h4>
       <div>
         <p className='mb-6 text-sm'>A Bachelor of Communication Science which fall in love with web programming. </p>
