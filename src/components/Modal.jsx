@@ -1,6 +1,11 @@
-const Modal = ({ showModalHandler }) => {
+import { useDispatch } from "react-redux";
+import { modalActions } from "../redux/modal";
+
+const Modal = () => {
+  const dispatch = useDispatch();
+
   const showModalAction = () => {
-    showModalHandler();
+    dispatch(modalActions.toggleModal());
   }
 
   return (
