@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#modal #backdrop {
+  backdrop-filter: blur(2px);
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

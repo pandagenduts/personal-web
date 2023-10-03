@@ -1,4 +1,3 @@
-import { useState } from "react"
 import Modal from "../../components/Modal"
 import Hero from "./components/Hero"
 import Portfolio from "./components/Portfolio"
