@@ -10,8 +10,24 @@ body {
   margin: 0;
 }
 
+body.active {
+  overflow: hidden;
+}
+
 #modal #backdrop {
   backdrop-filter: blur(2px);
+}
+
+#modal-iframe-wrapper iframe {
+  width: 125%;
+  height: 125%;
+  zoom: .8;
+  -moz-transform: scale(.8);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(.8);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(.8);
+  -webkit-transform-origin: 0 0;
 }
 
 /* :root {
