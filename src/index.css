@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --mainBlue: #0029FF;
+}
+
 body {
   margin: 0;
 }
@@ -24,7 +28,7 @@ body.active {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #4B4EFC;
+  background-color: var(--mainBlue);
   border-radius: 9999px;
 }
 

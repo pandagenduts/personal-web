@@ -38,9 +38,10 @@ const Modal = () => {
       ></div>
       <div
         id="content"
-        className={`z-20 w-full h-full p-2 overflow-y-auto bg-white transition-all duration-300 ${contentWidth}`}
+        className={`z-20 w-full h-full overflow-y-auto bg-white transition-all duration-300 ${contentWidth}`}
       >
-          <IFrame handleDeviceWidth={handleDeviceWidth} />
+          <IFrame handleDeviceWidth={handleDeviceWidth} deviceView={deviceView} />
+          <div className="p-2">
           <h3>Project Title</h3>
           <h4>Description</h4>
           <p>Lorem ipsum dolor sit amet</p>
@@ -51,6 +52,8 @@ const Modal = () => {
             <li>tech goes here</li>
           </ul>
           <h4>1 minute explanation</h4>
+
+          </div>
       </div>
     </div>
   );

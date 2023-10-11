@@ -1,7 +1,8 @@
 import { useDispatch } from "react-redux";
 import { modalActions } from "../../../../redux/modal";
+import { FaDesktop, FaTabletAlt, FaMobileAlt } from "react-icons/fa";
 
-const IFrame = ({handleDeviceWidth}) => {
+const IFrame = ({ handleDeviceWidth, deviceView }) => {
   const dispatch = useDispatch();
 
   const showModalHandler = () => {
@@ -9,25 +10,48 @@ const IFrame = ({handleDeviceWidth}) => {
   };
 
   const handleClickDesktop = () => {
-    handleDeviceWidth('DESKTOP')
-  }
+    handleDeviceWidth("DESKTOP");
+  };
 
   const handleClickTablet = () => {
-    handleDeviceWidth('TABLET')
-  }
+    handleDeviceWidth("TABLET");
+  };
 
   const handleClickMobile = () => {
-    handleDeviceWidth('MOBILE')
-  }
+    handleDeviceWidth("MOBILE");
+  };
+
+  // console.log(deviceView);
 
   return (
     <>
-      <div className="flex justify-between">
+      <div className="flex justify-between bg-primaryBlue min-h-[85px] items-center">
         <button onClick={showModalHandler}>Back</button>
         <div className="hidden md:flex md:gap-4">
-          <button className="hidden lg:inline-block" onClick={handleClickDesktop}>Desktop</button>
-          <button onClick={handleClickTablet}>Tablet</button>
-          <button onClick={handleClickMobile}>Mobile</button>
+          <button
+            className={`hidden p-4 border-none bg-white duration-150 hover:bg-opacity-30 cursor-pointer lg:inline-block rounded-md ${
+              deviceView === "DESKTOP" ? "bg-opacity-30" : "bg-opacity-10"
+            }`}
+            onClick={handleClickDesktop}
+          >
+            <FaDesktop />
+          </button>
+          <button
+            className={`p-4 border-none bg-white duration-150 rounded-md hover:bg-opacity-30 cursor-pointer ${
+              deviceView === "TABLET" ? "bg-opacity-30" : "bg-opacity-10"
+            }`}
+            onClick={handleClickTablet}
+          >
+            <FaTabletAlt />
+          </button>
+          <button
+            className={`p-4 border-none bg-white duration-150 rounded-md hover:bg-opacity-30 cursor-pointer ${
+              deviceView === "MOBILE" ? "bg-opacity-30" : "bg-opacity-10"
+            }`}
+            onClick={handleClickMobile}
+          >
+            <FaMobileAlt />
+          </button>
         </div>
         <a href="#">Visit Site</a>
       </div>
