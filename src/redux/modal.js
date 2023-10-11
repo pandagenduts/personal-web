@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit"
 
 const initModal = {
-  isShowModal: true,
+  isShowModal: false,
   modalData: null,
 }
 

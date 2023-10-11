@@ -5,7 +5,6 @@ import Header from "./Header"
 const Layout = () => {
   return (
     <>
-      <Header />
       <main className="flex flex-col pt-9">
         <Outlet />
       </main>
