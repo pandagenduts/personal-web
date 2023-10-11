@@ -9,7 +9,7 @@ const Modal = () => {
 
   const showModalHandler = () => {
     dispatch(modalActions.toggleModal());
-  };
+  }
 
   let contentWidth = '';
   if(deviceView === 'DESKTOP') {
