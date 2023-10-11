@@ -25,7 +25,7 @@ const IFrame = ({handleDeviceWidth}) => {
       <div className="flex justify-between">
         <button onClick={showModalHandler}>Back</button>
         <div className="hidden md:flex md:gap-4">
-          <button onClick={handleClickDesktop}>Desktop</button>
+          <button className="hidden lg:inline-block" onClick={handleClickDesktop}>Desktop</button>
           <button onClick={handleClickTablet}>Tablet</button>
           <button onClick={handleClickMobile}>Mobile</button>
         </div>

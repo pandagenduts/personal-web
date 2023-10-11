@@ -16,7 +16,7 @@ const Modal = () => {
     contentWidth = 'max-w-full'
   }
   else if (deviceView === 'TABLET') {
-    contentWidth = 'max-w-[770px]'
+    contentWidth = 'max-w-[800px]'
   }
   else if (deviceView === 'MOBILE') {
     contentWidth = 'max-w-[400px]'
