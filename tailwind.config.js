@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import plugin from 'tailwindcss/plugin';
+
 export default {
   content: [
     "./index.html",
@@ -7,11 +9,25 @@ export default {
   theme: {
     extend: {
       colors: {
-        bluePrimary: '#0029FF',
-        redSecondary: '#FF007A'
+        bluePrimary: 'var(--mainBlue)',
+        redSecondary: 'var(--secondaryRed)',
+        mainGrey: 'var(--textGrey)',
+        bgWhite: 'var(--bgWhite)'
+      },
+      fontSize: {
+        h1: ['1.875rem', {
+          lineHeight: '2.25rem',
+          fontWeight: '600'
+        }]
       }
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addBase }) {
+      addBase({
+
+      });
+    }),
+  ],
 }
 

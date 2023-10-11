@@ -1,6 +1,11 @@
 import { useDispatch } from "react-redux";
 import { modalActions } from "../../../../redux/modal";
-import { FaDesktop, FaTabletAlt, FaMobileAlt, FaLongArrowAltLeft } from "react-icons/fa";
+import {
+  FaDesktop,
+  FaTabletAlt,
+  FaMobileAlt,
+  FaLongArrowAltLeft,
+} from "react-icons/fa";
 import HyperLink from "../../../layouts/HyperLink";
 
 const IFrame = ({ handleDeviceWidth, deviceView }) => {
@@ -24,8 +29,14 @@ const IFrame = ({ handleDeviceWidth, deviceView }) => {
 
   return (
     <>
-      <div className="bg-bluePrimary flex items-center justify-between p-4">
-        <button className="flex gap-2 items-center border-none bg-transparent text-white font-medium" onClick={showModalHandler}><FaLongArrowAltLeft />Back</button>
+      <div className="bg-bluePrimary flex items-center justify-between px-6 py-4">
+        <button
+          className="flex cursor-pointer items-center gap-2 border-none bg-transparent font-medium text-white text-sm"
+          onClick={showModalHandler}
+        >
+          <FaLongArrowAltLeft />
+          Back
+        </button>
         <div className="hidden md:flex md:gap-6">
           <button
             className={`hidden h-9 w-9 cursor-pointer items-center justify-center rounded-md border-none bg-white duration-150 hover:bg-opacity-30 lg:flex ${
