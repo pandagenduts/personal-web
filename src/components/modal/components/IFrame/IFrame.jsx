@@ -27,11 +27,13 @@ const IFrame = ({ handleDeviceWidth, deviceView }) => {
     handleDeviceWidth("MOBILE");
   };
 
+  const buttonClasses = 'h-9 w-9 cursor-pointer items-center justify-center rounded-md border-none bg-white duration-150 hover:bg-opacity-30'
+
   return (
     <>
-      <div className="bg-bluePrimary flex items-center justify-between px-6 py-4">
+      <div className={`bg-bluePrimary flex items-center ${deviceView === 'MOBILE' ? 'justify-center' : 'justify-between'} px-6 py-4`}>
         <button
-          className="flex cursor-pointer items-center gap-2 border-none bg-transparent font-medium text-white text-sm"
+          className={`${deviceView === 'MOBILE' ? 'hidden' : ''} flex cursor-pointer items-center gap-2 border-none bg-transparent font-medium text-white text-sm`}
           onClick={showModalHandler}
         >
           <FaLongArrowAltLeft />
@@ -39,7 +41,7 @@ const IFrame = ({ handleDeviceWidth, deviceView }) => {
         </button>
         <div className="hidden md:flex md:gap-6">
           <button
-            className={`hidden h-9 w-9 cursor-pointer items-center justify-center rounded-md border-none bg-white duration-150 hover:bg-opacity-30 lg:flex ${
+            className={`hidden ${buttonClasses} lg:flex ${
               deviceView === "DESKTOP" ? "bg-opacity-30" : "bg-opacity-10"
             }`}
             onClick={handleClickDesktop}
@@ -47,7 +49,7 @@ const IFrame = ({ handleDeviceWidth, deviceView }) => {
             <FaDesktop className="h-4 w-4 text-white" />
           </button>
           <button
-            className={`flex h-9 w-9 cursor-pointer  items-center justify-center rounded-md border-none bg-white duration-150 hover:bg-opacity-30 ${
+            className={`flex ${buttonClasses} ${
               deviceView === "TABLET" ? "bg-opacity-30" : "bg-opacity-10"
             }`}
             onClick={handleClickTablet}
@@ -55,7 +57,7 @@ const IFrame = ({ handleDeviceWidth, deviceView }) => {
             <FaTabletAlt className="h-4 w-4 text-white" />
           </button>
           <button
-            className={`flex h-9 w-9 cursor-pointer items-center justify-center rounded-md border-none bg-white duration-150 hover:bg-opacity-30 ${
+            className={`flex ${buttonClasses} ${
               deviceView === "MOBILE" ? "bg-opacity-30" : "bg-opacity-10"
             }`}
             onClick={handleClickMobile}
@@ -65,7 +67,7 @@ const IFrame = ({ handleDeviceWidth, deviceView }) => {
         </div>
         <HyperLink
           href="#"
-          className="bg-redSecondary rounded-md px-3 py-2 text-sm text-white no-underline"
+          className={`${deviceView === 'MOBILE' ? 'hidden' : ''} bg-redSecondary rounded-md px-3 py-2 text-sm text-white no-underline`}
           newTab
         >
           Visit Site
