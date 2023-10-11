@@ -83,7 +83,7 @@ const IFrame = ({ handleDeviceWidth, deviceView }) => {
           className="h-full w-full"
         ></iframe>
       </div>
-    </div>
+    </>
   );
 };
 
