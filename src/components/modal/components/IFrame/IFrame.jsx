@@ -1,47 +1,32 @@
 import { useDispatch } from "react-redux";
 import { modalActions } from "../../../../redux/modal";
 
-const IFrame = ({handleDeviceWidth}) => {
+const IFrame = () => {
   const dispatch = useDispatch();
 
   const showModalHandler = () => {
     dispatch(modalActions.toggleModal());
   };
 
-  const handleClickDesktop = () => {
-    handleDeviceWidth('DESKTOP')
-  }
-
-  const handleClickTablet = () => {
-    handleDeviceWidth('TABLET')
-  }
-
-  const handleClickMobile = () => {
-    handleDeviceWidth('MOBILE')
-  }
-
   return (
-    <>
+    <div className="flex flex-col h-[85%]">
       <div className="flex justify-between">
         <button onClick={showModalHandler}>Back</button>
-        <div className="hidden md:flex md:gap-4">
-          <button onClick={handleClickDesktop}>Desktop</button>
-          <button onClick={handleClickTablet}>Tablet</button>
-          <button onClick={handleClickMobile}>Mobile</button>
+        <div className="flex gap-4">
+          <button>Desktop</button>
+          <button>Tablet</button>
+          <button>Mobile</button>
         </div>
         <a href="#">Visit Site</a>
       </div>
-      <div
-        id="modal-iframe-wrapper"
-        className="w-full h-[90%] overflow-hidden duration-150"
-      >
+      <div id="modal-iframe-wrapper" className="w-full h-full min-h-[678px] overflow-hidden">
         <iframe
           src="https://pandagenduts-space-tourism-2.netlify.app/"
           frameborder="0"
-          className="w-full h-full"
+          className=""
         ></iframe>
       </div>
-    </>
+    </div>
   );
 };
 

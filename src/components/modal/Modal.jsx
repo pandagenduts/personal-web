@@ -1,35 +1,18 @@
 import { useDispatch } from "react-redux";
 import { modalActions } from "../../redux/modal";
 import IFrame from "./components/IFrame/IFrame";
-import { useState } from "react";
 
 const Modal = () => {
-  const [deviceView, setDeviceView] = useState('DESKTOP');
   const dispatch = useDispatch();
 
   const showModalHandler = () => {
     dispatch(modalActions.toggleModal());
   };
 
-  let contentWidth = '';
-  if(deviceView === 'DESKTOP') {
-    contentWidth = 'max-w-full'
-  }
-  else if (deviceView === 'TABLET') {
-    contentWidth = 'max-w-[770px]'
-  }
-  else if (deviceView === 'MOBILE') {
-    contentWidth = 'max-w-[400px]'
-  }
-
-  const handleDeviceWidth = (device) => {
-    setDeviceView(device);
-  }
-
   return (
     <div
       id="modal"
-      className="fixed top-0 left-0 flex items-center justify-center w-screen h-screen px-4 py-4"
+      className="fixed top-0 left-0 flex items-center justify-center w-screen h-screen px-6"
     >
       <div
         id="backdrop"
@@ -38,9 +21,9 @@ const Modal = () => {
       ></div>
       <div
         id="content"
-        className={`z-20 w-full h-full p-2 overflow-y-auto bg-white transition-all duration-300 ${contentWidth}`}
+        className=" z-20 max-w-[1900px] w-full h-[95vh] min-h-[500px] bg-white p-2 overflow-y-auto"
       >
-          <IFrame handleDeviceWidth={handleDeviceWidth} />
+          <IFrame />
           <h3>Project Title</h3>
           <h4>Description</h4>
           <p>Lorem ipsum dolor sit amet</p>
