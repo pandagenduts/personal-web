@@ -21,7 +21,7 @@ const Home = () => {
       <Hero />
       <Portfolio />
       {/* {isShowModal ? <Modal /> : null} */}
-      <div className="fixed flex h-full w-full items-center justify-center">
+      <div className="fixed top-10 left-0 flex w-full items-center justify-center">
         <ModalV2 />
       </div>
     </>
