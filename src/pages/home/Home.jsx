@@ -22,7 +22,6 @@ const Home = () => {
       <Portfolio />
       {/* {isShowModal ? <Modal /> : null} */}
       <ModalV2 />
-      <iframe src="https://pandagenduts-space-tourism-2.netlify.app/" className="w-full h-[700px]"></iframe>
     </>
   );
 };
