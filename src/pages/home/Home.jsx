@@ -1,4 +1,5 @@
-import Modal from "../../components/modal/Modal";
+// import Modal from "../../components/modal/Modal";
+import ModalV2 from "../../components/modal/ModalV2";
 import Hero from "./components/Hero";
 import Portfolio from "./components/Portfolio";
 import { useSelector } from "react-redux";
@@ -19,7 +20,8 @@ const Home = () => {
     <>
       <Hero />
       <Portfolio />
-      {isShowModal ? <Modal /> : null}
+      {/* {isShowModal ? <Modal /> : null} */}
+      {isShowModal ? <ModalV2 /> : null}
       <iframe src="https://pandagenduts-space-tourism-2.netlify.app/" className="w-full h-[700px]"></iframe>
     </>
   );
