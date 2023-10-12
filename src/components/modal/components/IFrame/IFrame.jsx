@@ -86,7 +86,6 @@ const IFrame = ({
       >
         <iframe
           src={projectURL ? projectURL : ""}
-          frameborder="0"
           className={`${
             iFrameShow === "LIVE_SITE" ? "block" : "hidden"
           } h-full w-full`}
