@@ -42,13 +42,14 @@ const Modal = () => {
         id="content"
         className={`z-20 h-full w-full overflow-y-auto rounded-t-2xl bg-bgWhite transition-all duration-300 ${contentWidth}`}
       >
-        <IFrame
+        {/* <IFrame
           projectURL={projectURL}
           figmaEmbedURL={figmaEmbedURL}
           figma
           handleDeviceWidth={handleDeviceWidth}
           deviceView={deviceView}
-        />
+        /> */}
+        <iframe src="https://pandagenduts-space-tourism-2.netlify.app/" className="w-full h-[700px]"></iframe>
         <div className="p-2">
           {title && <h3>{title}</h3>}
           {techUsed && (
