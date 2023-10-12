@@ -35,7 +35,7 @@ const Home = () => {
         ></div>
         <div
           id="content"
-          className={`z-20 h-full w-full overflow-y-auto rounded-t-2xl bg-bgWhite transition-all duration-300`}
+          className={`z-20 h-full w-full overflow-y-auto rounded-t-2xl bg-bgWhite`}
         >
           <ModalV2 />
         </div>
