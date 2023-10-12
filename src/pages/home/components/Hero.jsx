@@ -12,8 +12,6 @@ const Hero = () => {
     dispatch(modalActions.toggleModal());
   };
 
-  console.log(portraitImage);
-
   return (
     <section className="mx-auto mb-12 flex max-w-3xl flex-col items-center px-4">
       <div className="shadow-bsRound2 mb-10 w-40 rounded-full duration-700 hover:shadow-none">

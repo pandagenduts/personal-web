@@ -1,11 +1,13 @@
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { modalActions } from "../../redux/modal";
 import IFrame from "./components/IFrame/IFrame";
 
 const Modal = () => {
   const [deviceView, setDeviceView] = useState("DESKTOP");
   const dispatch = useDispatch();
+  const { modalData } = useSelector(state => state.theModal)
+  console.log(modalData);
 
   const showModalHandler = () => {
     dispatch(modalActions.toggleModal());
@@ -27,7 +29,7 @@ const Modal = () => {
   return (
     <div
       id="modal"
-      className="fixed left-0 top-0 flex h-screen w-screen items-center justify-center px-4 py-4"
+      className="fixed left-0 top-0 flex h-screen w-screen items-center justify-center px-4 py-4 z-50"
     >
       <div
         id="backdrop"
