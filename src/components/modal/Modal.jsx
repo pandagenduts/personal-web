@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { modalActions } from "../../redux/modal";
-// import IFrame from "./components/IFrame/IFrame";
+import IFrame from "./components/IFrame/IFrame";
 import Pill from "../layouts/Pill";
 
 const Modal = () => {
@@ -9,7 +9,14 @@ const Modal = () => {
   const dispatch = useDispatch();
 
   const { modalData } = useSelector((state) => state.theModal);
-  const { title, description, projectURL, figmaEmbedURL, techUsed, techExplanation } = modalData;
+  const {
+    title,
+    description,
+    projectURL,
+    figmaEmbedURL,
+    techUsed,
+    techExplanation,
+  } = modalData;
 
   const showModalHandler = () => {
     dispatch(modalActions.toggleModal());
@@ -35,27 +42,28 @@ const Modal = () => {
     >
       <div
         id="backdrop"
-        className="fixed left-0 top-0 z-10 flex h-screen w-screen items-center justify-center bg-slate-900 bg-opacity-50"
+        className="absolute left-0 top-0 z-10 flex h-screen w-screen items-center justify-center bg-slate-900 bg-opacity-50"
         onClick={showModalHandler}
       ></div>
       <div
         id="content"
         className={`z-20 h-full w-full overflow-y-auto rounded-t-2xl bg-bgWhite transition-all duration-300 ${contentWidth}`}
       >
-        {/* <IFrame
+        <IFrame
           projectURL={projectURL}
           figmaEmbedURL={figmaEmbedURL}
           figma
           handleDeviceWidth={handleDeviceWidth}
           deviceView={deviceView}
-        /> */}
-        <iframe src="https://pandagenduts-space-tourism-2.netlify.app/" className="w-full h-[700px]"></iframe>
+        />
         <div className="p-2">
           {title && <h3>{title}</h3>}
           {techUsed && (
-          <div className="mb-4 flex flex-wrap gap-1">
-            {techUsed?.map((item, index) => <Pill key={index}>{item}</Pill>)}
-          </div>
+            <div className="mb-4 flex flex-wrap gap-1">
+              {techUsed?.map((item, index) => (
+                <Pill key={index}>{item}</Pill>
+              ))}
+            </div>
           )}
           {description && (
             <>
