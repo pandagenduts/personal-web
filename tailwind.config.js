@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 import plugin from "tailwindcss/plugin";
 
 export default {
@@ -11,6 +10,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+      },
       colors: {
         bluePrimary: "var(--mainBlue)",
         redSecondary: "var(--secondaryRed)",
