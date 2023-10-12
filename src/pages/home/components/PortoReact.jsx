@@ -9,13 +9,16 @@ const projectDatas = [
     title: "Space Tourism",
     imageCover: SpaceTourism,
     projectURL: "https://pandagenduts-space-tourism-2.netlify.app/",
+    figmaEmbedURL:
+      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp3aRvNn0JQOOUfAGTsyTZf%2Fspace-tourism-website%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DyR0edpx5wOpnRZe5-1",
     description: "lorem ipsum dolor sit amet",
+    techUsed: ["WordPress", "Elementor", "Custom HTML CSS JS"],
     techExplanation: "wordpress elementor custom HTML CSS JS",
   },
   {
     title: "Luxe",
     imageCover: Luxe,
-    projectURL: "https://google.com",
+    projectURL: "https://zhongxin-sg.com/en/",
     description: "Luxe ipsum dolor sit amet",
     techExplanation: "wordpress elementor custom HTML CSS JS",
   },
@@ -29,12 +32,10 @@ const projectDatas = [
 ];
 
 const PortoReact = () => {
-
   return (
     <>
       {projectDatas.map((item, index) => (
         <PortfolioCard key={index} itemData={item} />
-
       ))}
     </>
   );

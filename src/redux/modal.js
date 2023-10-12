@@ -13,7 +13,6 @@ const modalSlice = createSlice({
       state.isShowModal = !state.isShowModal
     },
     modalDataUpdate: (state, action) => {
-      // console.log(action.payload);
       state.modalData = action.payload;
     }
   }

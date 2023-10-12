@@ -2,12 +2,14 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { modalActions } from "../../redux/modal";
 import IFrame from "./components/IFrame/IFrame";
+import Pill from "../layouts/Pill";
 
 const Modal = () => {
   const [deviceView, setDeviceView] = useState("DESKTOP");
   const dispatch = useDispatch();
-  const { modalData } = useSelector(state => state.theModal)
-  console.log(modalData);
+
+  const { modalData } = useSelector((state) => state.theModal);
+  const { title, description, projectURL, figmaEmbedURL, techUsed, techExplanation } = modalData;
 
   const showModalHandler = () => {
     dispatch(modalActions.toggleModal());
@@ -29,7 +31,7 @@ const Modal = () => {
   return (
     <div
       id="modal"
-      className="fixed left-0 top-0 flex h-screen w-screen items-center justify-center px-4 py-4 z-50"
+      className="fixed left-0 top-0 z-50 flex h-screen w-screen items-center justify-center px-4 py-4"
     >
       <div
         id="backdrop"
@@ -38,20 +40,34 @@ const Modal = () => {
       ></div>
       <div
         id="content"
-        className={`z-20 h-full w-full overflow-y-auto bg-bgWhite transition-all duration-300 ${contentWidth}`}
+        className={`z-20 h-full w-full overflow-y-auto rounded-t-2xl bg-bgWhite transition-all duration-300 ${contentWidth}`}
       >
-        <IFrame handleDeviceWidth={handleDeviceWidth} deviceView={deviceView} />
+        <IFrame
+          projectURL={projectURL}
+          figmaEmbedURL={figmaEmbedURL}
+          figma
+          handleDeviceWidth={handleDeviceWidth}
+          deviceView={deviceView}
+        />
         <div className="p-2">
-          <h3>Space Tourism</h3>
-          <h4>Description</h4>
-          <p>Slicing Challenge from frontendmentor.io</p>
-          <h4>Tech Explanation</h4>
-          <ul>
-            <li>WordPress</li>
-            <li>Elementor</li>
-            <li>Custom HTML CSS JS</li>
-          </ul>
-          <h4>1 minute explanation</h4>
+          {title && <h3>{title}</h3>}
+          {techUsed && (
+          <div className="mb-4 flex flex-wrap gap-1">
+            {techUsed?.map((item, index) => <Pill key={index}>{item}</Pill>)}
+          </div>
+          )}
+          {description && (
+            <>
+              <h4>Description</h4>
+              <p>{description}</p>
+            </>
+          )}
+          {techExplanation && (
+            <>
+              <h4>Tech Explanation</h4>
+              <p>Lorem ipsum</p>
+            </>
+          )}
         </div>
       </div>
     </div>

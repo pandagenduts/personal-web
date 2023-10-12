@@ -11,18 +11,19 @@ export default {
     },
     extend: {
       fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif'],
+        montserrat: ["Montserrat", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       colors: {
         bluePrimary: "var(--mainBlue)",
+        bluePrimaryHover: "var(--mainBlueHover)",
         redSecondary: "var(--secondaryRed)",
         mainGrey: "var(--textGrey)",
         bgWhite: "var(--bgWhite)",
       },
       boxShadow: {
-        bsRound: '5px 5px 0 3px var(--mainBlue)',
-        bsRound2: '16px 16px 8px -5px rgba(0, 0, 0, 0.3)',
+        bsRound: "5px 5px 0 3px var(--mainBlue)",
+        bsRound2: "16px 16px 8px -5px rgba(0, 0, 0, 0.3)",
       },
       fontSize: {
         h1: [
