@@ -101,7 +101,7 @@ const IFrame = ({
             allowfullscreen
           ></iframe>
         )}
-        {figmaEmbedURL && (
+        {/* {figmaEmbedURL && (
           <div className="absolute bottom-1 flex gap-4 px-4">
             <button
               className={`${iframeSelectorClasses} ${
@@ -124,7 +124,7 @@ const IFrame = ({
               Figma
             </button>
           </div>
-        )}
+        )} */}
       </div>
     </>
   );
