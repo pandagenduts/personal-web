@@ -90,7 +90,7 @@ const IFrame = ({
             iFrameShow === "LIVE_SITE" ? "block" : "hidden"
           } h-full w-full`}
         ></iframe>
-        {/* {figmaEmbedURL && (
+        {figmaEmbedURL && (
           <iframe
             style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
             className={`${iFrameShow === "FIGMA" ? "block" : "hidden"}`}
@@ -123,7 +123,7 @@ const IFrame = ({
               Figma
             </button>
           </div>
-        )} */}
+        )}
       </div>
     </>
   );
