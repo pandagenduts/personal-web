@@ -30,10 +30,6 @@ const Home = () => {
         className="fixed left-0 top-0 z-50 flex h-screen w-screen items-center justify-center px-4 py-4"
       >
         <div
-          id="backdrop"
-          className="fixed left-0 top-0 z-10 flex h-screen w-screen items-center justify-center bg-slate-900 bg-opacity-50"
-        ></div>
-        <div
           id="content"
           className={`z-20 h-full w-full overflow-y-auto rounded-t-2xl bg-bgWhite`}
         >

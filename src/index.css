@@ -52,9 +52,9 @@ p {
   @apply text-sm mb-6;
 }
 
-#modal #backdrop {
+/* #modal #backdrop {
   backdrop-filter: blur(2px);
-}
+} */
 
 ::-webkit-scrollbar-track {
   background-color: #D9D9D9;
