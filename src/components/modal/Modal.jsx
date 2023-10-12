@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { modalActions } from "../../redux/modal";
-import IFrame from "./components/IFrame/IFrame";
+// import IFrame from "./components/IFrame/IFrame";
 import Pill from "../layouts/Pill";
 
 const Modal = () => {
