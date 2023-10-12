@@ -21,7 +21,9 @@ const Home = () => {
       <Hero />
       <Portfolio />
       {/* {isShowModal ? <Modal /> : null} */}
-      <ModalV2 />
+      <div className="fixed flex h-full w-full items-center justify-center">
+        <ModalV2 />
+      </div>
     </>
   );
 };
