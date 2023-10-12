@@ -43,7 +43,7 @@ const Modal = () => {
           <h3>Space Tourism</h3>
           <h4>Description</h4>
           <p>Slicing Challenge from frontendmentor.io</p>
-          <h4>Tech Explanation:</h4>
+          <h4>Tech Explanation</h4>
           <ul>
             <li>WordPress</li>
             <li>Elementor</li>
