@@ -21,8 +21,24 @@ const Home = () => {
       <Hero />
       <Portfolio />
       {/* {isShowModal ? <Modal /> : null} */}
-      <div className="fixed top-10 left-0 flex w-full items-center justify-center">
+      {/* <div className="fixed left-0 top-10 flex w-full items-center justify-center">
         <ModalV2 />
+      </div> */}
+
+      <div
+        id="modal"
+        className="fixed left-0 top-0 z-50 flex h-screen w-screen items-center justify-center px-4 py-4"
+      >
+        <div
+          id="backdrop"
+          className="fixed left-0 top-0 z-10 flex h-screen w-screen items-center justify-center bg-slate-900 bg-opacity-50"
+        ></div>
+        <div
+          id="content"
+          className={`z-20 h-full w-full overflow-y-auto rounded-t-2xl bg-bgWhite transition-all duration-300`}
+        >
+          <ModalV2 />
+        </div>
       </div>
     </>
   );
