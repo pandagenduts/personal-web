@@ -74,7 +74,7 @@ const Modal = () => {
           {techExplanation && (
             <>
               <h4>Tech Explanation</h4>
-              <p>Lorem ipsum</p>
+              <p>{techExplanation}</p>
             </>
           )}
         </div>

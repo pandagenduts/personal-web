@@ -71,7 +71,7 @@ const IFrame = ({
           </button>
         </div>
         <HyperLink
-          href="#"
+          href={projectURL ? projectURL : '#'}
           className={`${
             deviceView === "MOBILE" ? "hidden" : ""
           } rounded-md bg-redSecondary px-3 py-2 text-sm text-white no-underline`}
@@ -82,7 +82,7 @@ const IFrame = ({
       </div>
       <div
         id="modal-iframe-wrapper"
-        className="relative flex h-[85%] w-full justify-center overflow-hidden duration-150"
+        className="relative flex h-[85%] w-full justify-center overflow-hidden duration-150 shadow-md"
       >
         <iframe
           src={projectURL ? projectURL : ""}

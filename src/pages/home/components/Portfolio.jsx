@@ -1,7 +1,4 @@
 import { useEffect, useState } from "react";
-import PortoReact from "./PortoReact";
-import PortoWP from "./PortoWP";
-import PortoHTML from "./PortoHTML";
 import {
   reactProjectDatas,
   wordpressProjectDatas,
