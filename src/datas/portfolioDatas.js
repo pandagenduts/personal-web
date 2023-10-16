@@ -1,3 +1,7 @@
+import SpaceTourism from '../assets/space-tourism.png'
+import Luxe from '../assets/Luxe.png'
+import BrandsIo from '../assets/brands-io.png'
+
 const reactProjectDatas = [
   {
     title: "Space Tourism",

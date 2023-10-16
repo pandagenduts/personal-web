@@ -1,17 +1,31 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PortoReact from "./PortoReact";
 import PortoWP from "./PortoWP";
 import PortoHTML from "./PortoHTML";
+import {
+  reactProjectDatas,
+  wordpressProjectDatas,
+  htmlProjectDatas,
+} from "../../../datas/portfolioDatas";
+import PortfolioCard from "./PortfolioCard";
 
 const Portfolio = () => {
   const [cardCategory, setCardCategory] = useState("REACT");
+  const [projectDatas, setProjectDatas] = useState(reactProjectDatas);
 
   const buttonClasses = "duration-150 hover:text-bluePrimary";
+
+  useEffect(() => {
+    if (cardCategory === "REACT") setProjectDatas(reactProjectDatas);
+    else if (cardCategory === "WORDPRESS")
+      setProjectDatas(wordpressProjectDatas);
+    else if (cardCategory === "HTML") setProjectDatas(htmlProjectDatas);
+  }, [cardCategory]);
 
   return (
     <section className="container w-full px-4">
       <h2 className="text-center">Portfolio</h2>
-      <div className="flex justify-center gap-4 mb-10">
+      <div className="mb-10 flex justify-center gap-4">
         <button
           onClick={() => setCardCategory("REACT")}
           className={`${buttonClasses} ${
@@ -38,9 +52,9 @@ const Portfolio = () => {
         </button>
       </div>
       <div className="grid h-auto  grid-cols-1 gap-4 sm:w-full sm:grid-cols-2 lg:grid-cols-3 ">
-        {cardCategory === "REACT" && <PortoReact />}
-        {cardCategory === "WORDPRESS" && <PortoWP />}
-        {cardCategory === "HTML" && <PortoHTML />}
+        {projectDatas.map((item, index) => (
+          <PortfolioCard key={index} itemData={item} />
+        ))}
       </div>
     </section>
   );
