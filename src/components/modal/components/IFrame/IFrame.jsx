@@ -82,7 +82,7 @@ const IFrame = ({
       </div>
       <div
         id="modal-iframe-wrapper"
-        className="relative flex h-[85%] w-full justify-center overflow-hidden duration-150 shadow-md"
+        className="relative flex h-[85%] w-full justify-center overflow-hidden duration-150 shadow-md bg-white"
       >
         <iframe
           src={projectURL ? projectURL : ""}

@@ -10,7 +10,7 @@ import RecipeBlog from "../assets/Recipe Blog.png";
 const reactProjectDatas = [
   {
     title: "Pixel Overture",
-    imageCover: "",
+    imageCover: FurniShop,
     projectURL: "https://pandagenduts-space-tourism-2.netlify.app/",
     description: "lorem ipsum dolor sit amet",
     techUsed: ["React", "Next JS", "Tailwind CSS", "Framer Motion"],
@@ -18,38 +18,38 @@ const reactProjectDatas = [
   },
   {
     title: "Windbnb",
-    imageCover: "",
+    imageCover: CheckoutPage,
     figmaEmbedURL:
-      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp3aRvNn0JQOOUfAGTsyTZf%2Fspace-tourism-website%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DyR0edpx5wOpnRZe5-1",
-    projectURL: "https://zhongxin-sg.com/en/",
+      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FKGNH8dbclXT1vzXLyPrBeu%2FWindbnb%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DWkEFfoeSPRckTOY7-1",
+    projectURL: "https://donny-challenge3-windbnb.netlify.app/",
     description: "Luxe ipsum dolor sit amet",
     techUsed: ["React", "Next JS", "Tailwind CSS", "Framer Motion"],
     techExplanation: "wordpress elementor custom HTML CSS JS",
   },
   {
     title: "Food Ordering App",
-    imageCover: "",
-    projectURL: "https://legacy.devchallenges.io/",
+    imageCover: Portfolio,
+    projectURL: "https://react-food-v2.netlify.app/",
     description: "Brands io ipsum dolor sit amet",
     techUsed: ["React"],
     techExplanation: "wordpress elementor custom HTML CSS JS",
   },
   {
     title: "Reusable Component: Input",
-    imageCover: "",
+    imageCover: RecipeBlog,
     figmaEmbedURL:
-      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp3aRvNn0JQOOUfAGTsyTZf%2Fspace-tourism-website%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DyR0edpx5wOpnRZe5-1",
-    projectURL: "https://zhongxin-sg.com/en/",
+      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FslzHnI05qpbBeC33ZMZGa5%2Finput-component%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DWkEFfoeSPRckTOY7-1",
+    projectURL: "https://donny-button-input-devchallenges.netlify.app/input",
     description: "Luxe ipsum dolor sit amet",
     techUsed: ["React", "Next JS", "Tailwind CSS", "CVA", "Tailwind Merge"],
     techExplanation: "wordpress elementor custom HTML CSS JS",
   },
   {
     title: "Reusable Component: Button",
-    imageCover: "",
+    imageCover: EdieHomepage,
     figmaEmbedURL:
-      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp3aRvNn0JQOOUfAGTsyTZf%2Fspace-tourism-website%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DyR0edpx5wOpnRZe5-1",
-    projectURL: "https://zhongxin-sg.com/en/",
+      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FvfMDJhGGnqfaskO2aud06o%2Fbutton-component%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DWkEFfoeSPRckTOY7-1",
+    projectURL: "https://donny-button-input-devchallenges.netlify.app/buttons",
     description: "Luxe ipsum dolor sit amet",
     techUsed: ["React", "Next JS", "Tailwind CSS", "CVA", "Tailwind Merge"],
     techExplanation: "wordpress elementor custom HTML CSS JS",
@@ -59,7 +59,7 @@ const reactProjectDatas = [
 const wordpressProjectDatas = [
   {
     title: "Dongmul Food",
-    imageCover: "",
+    imageCover: Luxe,
     projectURL: "https://dongmulfood.com/",
     description: "lorem ipsum dolor sit amet",
     techUsed: [
@@ -73,7 +73,7 @@ const wordpressProjectDatas = [
   },
   {
     title: "ZhongXin",
-    imageCover: "",
+    imageCover: RecipeBlog,
     projectURL: "https://zhongxin-sg.com/en/",
     description: "Luxe ipsum dolor sit amet",
     techUsed: ["WordPress", "Custom Theme", "Custom HTML CSS JS"],
@@ -81,7 +81,7 @@ const wordpressProjectDatas = [
   },
   {
     title: "Pivot SG",
-    imageCover: "",
+    imageCover: EdieHomepage,
     projectURL: "https://pivot.sg/",
     description:
       "I work as the WordPress Developer. Project from my previous company (Harnods).",
