@@ -33,7 +33,7 @@ const IFrame = ({
       <div
         className={`flex items-center bg-bluePrimary ${
           deviceView === "MOBILE" ? "justify-center" : "justify-between"
-        } px-6 py-4`}
+        } py-3 px-4 md:px-6 md:py-4`}
       >
         <button
           className={`${
@@ -74,7 +74,7 @@ const IFrame = ({
           href={projectURL ? projectURL : '#'}
           className={`${
             deviceView === "MOBILE" ? "hidden" : ""
-          } rounded-md bg-redSecondary px-3 py-2 text-sm text-white no-underline`}
+          } rounded-md bg-redSecondary px-2 py-1 md:px-3 md:py-2 text-sm text-white no-underline`}
           newTab
         >
           Visit Site
