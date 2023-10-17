@@ -68,13 +68,25 @@ const Modal = () => {
           {description && (
             <>
               <h4>Description</h4>
-              <p>{description}</p>
+              <ul>
+                {description.map((item, index) => (
+                  <li key={index}>
+                    <p>{item}</p>
+                  </li>
+                ))}
+              </ul>
             </>
           )}
           {techExplanation && (
             <>
               <h4>Tech Explanation</h4>
-              <p>{techExplanation}</p>
+              <ul>
+                {techExplanation.map((item, index) => (
+                  <li key={index}>
+                    <p>{item}</p>
+                  </li>
+                ))}
+              </ul>
             </>
           )}
         </div>

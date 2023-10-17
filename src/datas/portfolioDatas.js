@@ -10,58 +10,73 @@ import RecipeBlog from "../assets/Recipe Blog.png";
 const reactProjectDatas = [
   {
     title: "Pixel Overture",
-    imageCover: FurniShop,
+    imageCover: "",
     projectURL: "https://pandagenduts-space-tourism-2.netlify.app/",
-    description: "lorem ipsum dolor sit amet",
+    description: ["A pixel-perfect conversion from Figma w/ Next JS & Tailwind"],
     techUsed: ["React", "Next JS", "Tailwind CSS", "Framer Motion"],
-    techExplanation: "wordpress elementor custom HTML CSS JS",
+    techExplanation: ["wordpress elementor custom HTML CSS JS"],
   },
   {
     title: "Windbnb",
-    imageCover: CheckoutPage,
+    imageCover: "",
     figmaEmbedURL:
       "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FKGNH8dbclXT1vzXLyPrBeu%2FWindbnb%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DWkEFfoeSPRckTOY7-1",
     projectURL: "https://donny-challenge3-windbnb.netlify.app/",
-    description: "Luxe ipsum dolor sit amet",
-    techUsed: ["React", "Next JS", "Tailwind CSS", "Framer Motion"],
-    techExplanation: "wordpress elementor custom HTML CSS JS",
+    description: [
+      "User can filter the stays based on location and number of guests.",
+      "To apply filter, simply fill in the filter and press Search button or close the popup filter by clicking the overlay.",
+      "A simple clone of Airbnb, a challenge from legacy.devchallenges.io",
+    ],
+    techUsed: ["React", 'Redux', 'Redux Toolkit', "Tailwind CSS", "Framer Motion"],
+    techExplanation: ["Built using React and Tailwind CSS"],
   },
   {
     title: "Food Ordering App",
-    imageCover: Portfolio,
+    imageCover: "",
     projectURL: "https://react-food-v2.netlify.app/",
-    description: "Brands io ipsum dolor sit amet",
+    description: [
+      "User and chose menus, add it to the cart and place an order.",
+      "A simple food ordering app with Cart feature.",
+    ],
     techUsed: ["React"],
-    techExplanation: "wordpress elementor custom HTML CSS JS",
+    techExplanation: [
+      "Cart feature is built w/ React Context and Reducer.",
+      "The form validation is built w/ Custom Hooks.",
+      "The order is sent to Firebase realtime database via API.",
+    ],
   },
   {
     title: "Reusable Component: Input",
-    imageCover: RecipeBlog,
+    imageCover: "",
     figmaEmbedURL:
       "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FslzHnI05qpbBeC33ZMZGa5%2Finput-component%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DWkEFfoeSPRckTOY7-1",
     projectURL: "https://donny-button-input-devchallenges.netlify.app/input",
-    description: "Luxe ipsum dolor sit amet",
+    description: ["Luxe ipsum dolor sit amet"],
     techUsed: ["React", "Next JS", "Tailwind CSS", "CVA", "Tailwind Merge"],
-    techExplanation: "wordpress elementor custom HTML CSS JS",
+    techExplanation: ["wordpress elementor custom HTML CSS JS"],
   },
   {
     title: "Reusable Component: Button",
-    imageCover: EdieHomepage,
+    imageCover: "",
     figmaEmbedURL:
       "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FvfMDJhGGnqfaskO2aud06o%2Fbutton-component%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DWkEFfoeSPRckTOY7-1",
     projectURL: "https://donny-button-input-devchallenges.netlify.app/buttons",
-    description: "Luxe ipsum dolor sit amet",
+    description: ["Luxe ipsum dolor sit amet"],
     techUsed: ["React", "Next JS", "Tailwind CSS", "CVA", "Tailwind Merge"],
-    techExplanation: "wordpress elementor custom HTML CSS JS",
+    techExplanation: ["wordpress elementor custom HTML CSS JS"],
   },
 ];
 
 const wordpressProjectDatas = [
   {
     title: "Dongmul Food",
-    imageCover: Luxe,
+    imageCover: "",
     projectURL: "https://dongmulfood.com/",
-    description: "lorem ipsum dolor sit amet",
+    description: [
+      "User can choose and buy the products.",
+      "User can get pet food portion suggestion on Calculator Page based on the input.",
+      "Project is built together w/ team, I work as the WordPress Developer. Project from Pixel Overture Digital Agency.",
+    ],
     techUsed: [
       "WordPress",
       "Elementor",
@@ -69,32 +84,77 @@ const wordpressProjectDatas = [
       "Crocoblock",
       "Custom HTML CSS JS",
     ],
-    techExplanation: "wordpress elementor custom HTML CSS JS",
+    techExplanation: ["wordpress elementor custom HTML CSS JS"],
   },
   {
     title: "ZhongXin",
-    imageCover: RecipeBlog,
+    imageCover: "",
     projectURL: "https://zhongxin-sg.com/en/",
-    description: "Luxe ipsum dolor sit amet",
-    techUsed: ["WordPress", "Custom Theme", "Custom HTML CSS JS"],
-    techExplanation: "wordpress elementor custom HTML CSS JS",
+    description: [
+      "User can choose Chinese or English language.",
+      "Project is built together w/ team, I work as the WordPress Developer. Project from my previous company (Harnods).",
+    ],
+    techUsed: ["WordPress", "WPML", "Custom Theme", "ACF"],
+    techExplanation: [
+      "Site is built by Custom Theme (PHP) and Multi Language w/ WPML. I handle the WordPress Development part.",
+    ],
   },
   {
     title: "Pivot SG",
-    imageCover: EdieHomepage,
+    imageCover: "",
     projectURL: "https://pivot.sg/",
-    description:
-      "I work as the WordPress Developer. Project from my previous company (Harnods).",
-    techUsed: ["WordPress", "Custom Theme", "Custom HTML CSS JS"],
-    techExplanation:
+    description: [
+      "User can choose Commercial or Residential site part.",
+      "User can navigate to another multisite by selector on header.",
+      "Project is built together w/ team, I work as the WordPress Developer. Project from my previous company (Harnods).",
+    ],
+    techUsed: ["WordPress", "Multisite", "Custom Theme", "ACF"],
+    techExplanation: [
       "Site is built by Custom Theme (PHP) and WordPress Multisite. I handle the WordPress Development part.",
+    ],
   },
   {
     title: "Luxe",
     imageCover: Luxe,
-    projectURL: "https://zhongxin-sg.com/en/",
-    description: "Luxe ipsum dolor sit amet",
-    techExplanation: "wordpress elementor custom HTML CSS JS",
+    projectURL: "https://luxe.portogarage.com/",
+    description: [
+      "User can see all rooms, and room details.",
+      "Luxe hotel website w/ dynamic feature for rooms.",
+    ],
+    techUsed: ["WordPress", "Elementor", "Crocoblock", "Custom HTML CSS"],
+    techExplanation: [
+      "The rooms is built w/ Custom Post Type from Crocoblock.",
+    ],
+  },
+  {
+    title: "Brands io",
+    imageCover: BrandsIo,
+    projectURL: "https://brands-io.portogarage.com/",
+    description: [
+      "User can click the pulsing button and watch the video w/ popup (bottom CTA section).",
+      "A pixel-perfect conversion from Figma w/ Elementor. Design source: arshakir.com",
+    ],
+    techUsed: ["WordPress", "Elementor", "Custom HTML CSS"],
+    techExplanation: [
+      "Involves a lot of custom CSS for the pixel-perfect conversion.",
+      "Animation is built w/ CSS.",
+    ],
+  },
+  {
+    title: "Furni shop",
+    imageCover: FurniShop,
+    projectURL: "https://furnishop.portogarage.com/",
+    figmaEmbedURL:
+      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp3aRvNn0JQOOUfAGTsyTZf%2Fspace-tourism-website%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DyR0edpx5wOpnRZe5-1",
+    description: [
+      "User can see slider content by swiping the slider or clicking the arrow buttons (on Hero & Testimonial section).",
+      "A pixel-perfect conversion from Figma w/ Elementor. Design source: arshakir.com",
+    ],
+    techUsed: ["WordPress", "Elementor", "Custom HTML CSS JS"],
+    techExplanation: [
+      "Involves a lot of custom CSS for the pixel-perfect conversion. 😃",
+      "The slider and content matching is built by integrating Swiper JS and custom JavaScript.",
+    ],
   },
   {
     title: "Space Tourism",
@@ -102,27 +162,16 @@ const wordpressProjectDatas = [
     projectURL: "https://pandagenduts-space-tourism-2.netlify.app/",
     figmaEmbedURL:
       "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp3aRvNn0JQOOUfAGTsyTZf%2Fspace-tourism-website%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DyR0edpx5wOpnRZe5-1",
-    description: "lorem ipsum dolor sit amet",
+    description: [
+      "User can see content by swiping the slider or clicking the navigation button.",
+      "A pixel-perfect conversion from Figma w/ Elementor.",
+      "Assets and design from frontendmentor.io",
+    ],
     techUsed: ["WordPress", "Elementor", "Custom HTML CSS JS"],
-    techExplanation: "wordpress elementor custom HTML CSS JS",
-  },
-  {
-    title: "Brands io",
-    imageCover: BrandsIo,
-    projectURL: "https://legacy.devchallenges.io/",
-    description: "Brands io ipsum dolor sit amet",
-    techExplanation: "wordpress elementor custom HTML CSS JS",
-  },
-  {
-    title: "Furni shop",
-    imageCover: FurniShop,
-    projectURL: "https://pandagenduts-space-tourism-2.netlify.app/",
-    figmaEmbedURL:
-      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp3aRvNn0JQOOUfAGTsyTZf%2Fspace-tourism-website%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DyR0edpx5wOpnRZe5-1",
-    description:
-      "A Slicing Practice Project. Pixel-perfect and responsive. Source: arshakir.com",
-    techUsed: ["WordPress", "Elementor", "Custom HTML CSS JS"],
-    techExplanation: "wordpress elementor custom HTML CSS JS",
+    techExplanation: [
+      "Involves a lot of custom CSS for the pixel-perfect conversion. 😃",
+      "The slider and content matching is built by integrating Swiper JS and custom JavaScript.",
+    ],
   },
 ];
 
@@ -133,9 +182,9 @@ const htmlProjectDatas = [
     projectURL: "https://pandagenduts-portfolio-devchallenges.netlify.app/",
     figmaEmbedURL:
       "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp3aRvNn0JQOOUfAGTsyTZf%2Fspace-tourism-website%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DyR0edpx5wOpnRZe5-1",
-    description: "lorem ipsum dolor sit amet",
+    description: ["lorem ipsum dolor sit amet"],
     techUsed: ["HTML", "Vanilla CSS", "Vanilla JavaScript"],
-    techExplanation: "wordpress elementor custom HTML CSS JS",
+    techExplanation: ["wordpress elementor custom HTML CSS JS"],
   },
   {
     title: "Edie Homepage",
@@ -143,9 +192,9 @@ const htmlProjectDatas = [
     projectURL: "https://pandagenduts-edie-homepage.netlify.app/",
     figmaEmbedURL:
       "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp3aRvNn0JQOOUfAGTsyTZf%2Fspace-tourism-website%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DyR0edpx5wOpnRZe5-1",
-    description: "lorem ipsum dolor sit amet",
+    description: ["lorem ipsum dolor sit amet"],
     techUsed: ["HTML", "Vanilla CSS", "Vanilla JavaScript"],
-    techExplanation: "wordpress elementor custom HTML CSS JS",
+    techExplanation: ["wordpress elementor custom HTML CSS JS"],
   },
   {
     title: "Recipe Blog",
@@ -153,9 +202,9 @@ const htmlProjectDatas = [
     projectURL: "https://pandagenduts-recipe-page.netlify.app/",
     figmaEmbedURL:
       "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp3aRvNn0JQOOUfAGTsyTZf%2Fspace-tourism-website%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DyR0edpx5wOpnRZe5-1",
-    description: "lorem ipsum dolor sit amet",
+    description: ["lorem ipsum dolor sit amet"],
     techUsed: ["HTML", "Vanilla CSS", "Vanilla JavaScript"],
-    techExplanation: "wordpress elementor custom HTML CSS JS",
+    techExplanation: ["wordpress elementor custom HTML CSS JS"],
   },
   {
     title: "Checkout Page",
@@ -163,9 +212,9 @@ const htmlProjectDatas = [
     projectURL: "https://pandagenduts-checkout-page.netlify.app/",
     figmaEmbedURL:
       "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp3aRvNn0JQOOUfAGTsyTZf%2Fspace-tourism-website%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DyR0edpx5wOpnRZe5-1",
-    description: "lorem ipsum dolor sit amet",
+    description: ["lorem ipsum dolor sit amet"],
     techUsed: ["HTML", "Vanilla CSS", "Vanilla JavaScript"],
-    techExplanation: "wordpress elementor custom HTML CSS JS",
+    techExplanation: ["wordpress elementor custom HTML CSS JS"],
   },
 ];
 
