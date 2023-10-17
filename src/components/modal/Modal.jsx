@@ -47,7 +47,7 @@ const Modal = () => {
       ></div>
       <div
         id="content"
-        className={`z-20 h-full w-full overflow-y-auto rounded-t-2xl bg-bgWhite transition-all duration-300 ${contentWidth}`}
+        className={`z-20 h-full w-full overflow-y-auto rounded-2xl bg-bgWhite transition-all duration-300 ${contentWidth}`}
       >
         <IFrame
           projectURL={projectURL}
@@ -56,7 +56,7 @@ const Modal = () => {
           handleDeviceWidth={handleDeviceWidth}
           deviceView={deviceView}
         />
-        <div className="p-2">
+        <div className="px-2 pt-2">
           {title && <h3>{title}</h3>}
           {techUsed && (
             <div className="mb-4 flex flex-wrap gap-1">
