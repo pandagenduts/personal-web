@@ -1,16 +1,29 @@
+// React
+import InputComp from "../assets/Input Component Alt.png";
+import ButtonComp from "../assets/Button Component Alt.png";
+import Windbnb from "../assets/Windbnb.png";
+import FoodOrderApp from "../assets/Food Order App.png";
+import PixelOverture from "../assets/Pixel Overture.png";
+
+// WordPress
 import SpaceTourism from "../assets/space-tourism.png";
 import Luxe from "../assets/Luxe.png";
 import BrandsIo from "../assets/brands-io.png";
 import FurniShop from "../assets/furni-shop.png";
+import PivotLight from "../assets/Pivot Light.png";
+import ZhongXinDark from "../assets/Zhong Xin Dark.png";
+import DongmulFood from "../assets/Dongmul Food.png";
+
+// HTML
 import Portfolio from "../assets/Portfolio.png";
-import EdieHomepage from "../assets/Edie Homepage.png";
-import CheckoutPage from "../assets/Checkout Page.png";
 import RecipeBlog from "../assets/Recipe Blog.png";
+import CheckoutPage from "../assets/Checkout Page.png";
+import EdieHomepage from "../assets/Edie Homepage.png";
 
 const reactProjectDatas = [
   {
     title: "Pixel Overture",
-    imageCover: "",
+    imageCover: PixelOverture,
     projectURL: "https://pandagenduts-space-tourism-2.netlify.app/",
     description: ["A pixel-perfect conversion from Figma w/ Next JS & Tailwind"],
     techUsed: ["React", "Next JS", "Tailwind CSS", "Framer Motion"],
@@ -18,7 +31,7 @@ const reactProjectDatas = [
   },
   {
     title: "Windbnb",
-    imageCover: "",
+    imageCover: Windbnb,
     figmaEmbedURL:
       "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FKGNH8dbclXT1vzXLyPrBeu%2FWindbnb%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DWkEFfoeSPRckTOY7-1",
     projectURL: "https://donny-challenge3-windbnb.netlify.app/",
@@ -32,7 +45,7 @@ const reactProjectDatas = [
   },
   {
     title: "Food Ordering App",
-    imageCover: "",
+    imageCover: FoodOrderApp,
     projectURL: "https://react-food-v2.netlify.app/",
     description: [
       "User and chose menus, add it to the cart and place an order.",
@@ -47,7 +60,7 @@ const reactProjectDatas = [
   },
   {
     title: "Reusable Component: Input",
-    imageCover: "",
+    imageCover: InputComp,
     figmaEmbedURL:
       "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FslzHnI05qpbBeC33ZMZGa5%2Finput-component%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DWkEFfoeSPRckTOY7-1",
     projectURL: "https://donny-button-input-devchallenges.netlify.app/input",
@@ -57,7 +70,7 @@ const reactProjectDatas = [
   },
   {
     title: "Reusable Component: Button",
-    imageCover: "",
+    imageCover: ButtonComp,
     figmaEmbedURL:
       "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FvfMDJhGGnqfaskO2aud06o%2Fbutton-component%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DWkEFfoeSPRckTOY7-1",
     projectURL: "https://donny-button-input-devchallenges.netlify.app/buttons",
@@ -70,7 +83,7 @@ const reactProjectDatas = [
 const wordpressProjectDatas = [
   {
     title: "Dongmul Food",
-    imageCover: "",
+    imageCover: DongmulFood,
     projectURL: "https://dongmulfood.com/",
     description: [
       "User can choose and buy the products.",
@@ -88,7 +101,7 @@ const wordpressProjectDatas = [
   },
   {
     title: "ZhongXin",
-    imageCover: "",
+    imageCover: ZhongXinDark,
     projectURL: "https://zhongxin-sg.com/en/",
     description: [
       "User can choose Chinese or English language.",
@@ -101,7 +114,7 @@ const wordpressProjectDatas = [
   },
   {
     title: "Pivot SG",
-    imageCover: "",
+    imageCover: PivotLight,
     projectURL: "https://pivot.sg/",
     description: [
       "User can choose Commercial or Residential site part.",
