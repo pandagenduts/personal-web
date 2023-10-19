@@ -88,7 +88,7 @@ const IFrame = ({
           src={projectURL ? projectURL : ""}
           className={`${
             iFrameShow === "LIVE_SITE" ? "block" : "hidden"
-          } h-full w-full`}
+          } w-full h-full`}
         ></iframe>
         {figmaEmbedURL && (
           <iframe

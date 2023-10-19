@@ -21,14 +21,14 @@ import CheckoutPage from "../assets/Checkout Page.png";
 import EdieHomepage from "../assets/Edie Homepage.png";
 
 const reactProjectDatas = [
-  {
-    title: "Pixel Overture",
-    imageCover: PixelOverture,
-    projectURL: "https://pandagenduts-space-tourism-2.netlify.app/",
-    description: ["A pixel-perfect conversion from Figma w/ Next JS & Tailwind"],
-    techUsed: ["React", "Next JS", "Tailwind CSS", "Framer Motion"],
-    techExplanation: ["wordpress elementor custom HTML CSS JS"],
-  },
+  // {
+  //   title: "Pixel Overture",
+  //   imageCover: PixelOverture,
+  //   projectURL: "https://pandagenduts-space-tourism-2.netlify.app/",
+  //   description: ["A pixel-perfect conversion from Figma w/ Next JS & Tailwind"],
+  //   techUsed: ["React", "Next JS", "Tailwind CSS", "Framer Motion"],
+  //   techExplanation: ["wordpress elementor custom HTML CSS JS"],
+  // },
   {
     title: "Windbnb",
     imageCover: Windbnb,
@@ -40,7 +40,13 @@ const reactProjectDatas = [
       "To apply filter, simply fill in the filter and press Search button or close the popup filter by clicking the overlay.",
       "A simple clone of Airbnb, a challenge from legacy.devchallenges.io",
     ],
-    techUsed: ["React", 'Redux', 'Redux Toolkit', "Tailwind CSS", "Framer Motion"],
+    techUsed: [
+      "React",
+      "Redux",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "Framer Motion",
+    ],
     techExplanation: ["Built using React and Tailwind CSS"],
   },
   {
@@ -64,9 +70,14 @@ const reactProjectDatas = [
     figmaEmbedURL:
       "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FslzHnI05qpbBeC33ZMZGa5%2Finput-component%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DWkEFfoeSPRckTOY7-1",
     projectURL: "https://donny-button-input-devchallenges.netlify.app/input",
-    description: ["Luxe ipsum dolor sit amet"],
+    description: [
+      "To use the component, simply type the available props that shown on the title of each input.",
+      "A reusable input component challenge from legacy.devchallenges.io",
+    ],
     techUsed: ["React", "Next JS", "Tailwind CSS", "CVA", "Tailwind Merge"],
-    techExplanation: ["wordpress elementor custom HTML CSS JS"],
+    techExplanation: [
+      "Reusable component is built with CVA and Tailwind Merge to ease the maintainability while highly customizable for future updates 😃",
+    ],
   },
   {
     title: "Reusable Component: Button",
@@ -74,9 +85,14 @@ const reactProjectDatas = [
     figmaEmbedURL:
       "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FvfMDJhGGnqfaskO2aud06o%2Fbutton-component%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DWkEFfoeSPRckTOY7-1",
     projectURL: "https://donny-button-input-devchallenges.netlify.app/buttons",
-    description: ["Luxe ipsum dolor sit amet"],
+    description: [
+      "To use the component, simply type the available props that shown on the title of each button.",
+      "A reusable button component challenge from legacy.devchallenges.io",
+    ],
     techUsed: ["React", "Next JS", "Tailwind CSS", "CVA", "Tailwind Merge"],
-    techExplanation: ["wordpress elementor custom HTML CSS JS"],
+    techExplanation: [
+      "Reusable component is built with CVA and Tailwind Merge to ease the maintainability while highly customizable for future updates 😃",
+    ],
   },
 ];
 
@@ -86,6 +102,7 @@ const wordpressProjectDatas = [
     imageCover: DongmulFood,
     projectURL: "https://dongmulfood.com/",
     description: [
+      "An Online-Shop Website",
       "User can choose and buy the products.",
       "User can get pet food portion suggestion on Calculator Page based on the input.",
       "Project is built together w/ team, I work as the WordPress Developer. Project from Pixel Overture Digital Agency.",
@@ -97,7 +114,10 @@ const wordpressProjectDatas = [
       "Crocoblock",
       "Custom HTML CSS JS",
     ],
-    techExplanation: ["wordpress elementor custom HTML CSS JS"],
+    techExplanation: [
+      "Site is built with WordPress, Elementor, WooCommerce and Crocoblock.",
+      "The Calculator Page and Client Testimony background is built using vanilla JavaScript (yes I develop that feature).",
+    ],
   },
   {
     title: "ZhongXin",
@@ -136,6 +156,7 @@ const wordpressProjectDatas = [
     ],
     techUsed: ["WordPress", "Elementor", "Crocoblock", "Custom HTML CSS"],
     techExplanation: [
+      "Involves a lot of custom CSS for the pixel-perfect conversion.",
       "The rooms is built w/ Custom Post Type from Crocoblock.",
     ],
   },
