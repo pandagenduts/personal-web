@@ -38,7 +38,7 @@ const reactProjectDatas = [
     description: [
       "User can filter the stays based on location and number of guests.",
       "To apply filter, simply fill in the filter and press Search button or close the popup filter by clicking the overlay.",
-      "A simple clone of Airbnb, a challenge from legacy.devchallenges.io",
+      "Simple Airbnb clone of Frontend Developer challenge from legacy.devchallenges.io",
     ],
     techUsed: [
       "React",
@@ -72,7 +72,7 @@ const reactProjectDatas = [
     projectURL: "https://donny-button-input-devchallenges.netlify.app/input",
     description: [
       "To use the component, simply type the available props that shown on the title of each input.",
-      "A reusable input component challenge from legacy.devchallenges.io",
+      "A Reusable Input Component of Frontend Developer challenge from legacy.devchallenges.io",
     ],
     techUsed: ["React", "Next JS", "Tailwind CSS", "CVA", "Tailwind Merge"],
     techExplanation: [
@@ -87,7 +87,7 @@ const reactProjectDatas = [
     projectURL: "https://donny-button-input-devchallenges.netlify.app/buttons",
     description: [
       "To use the component, simply type the available props that shown on the title of each button.",
-      "A reusable button component challenge from legacy.devchallenges.io",
+      "A Reusable Button Component of Frontend Developer challenge from legacy.devchallenges.io",
     ],
     techUsed: ["React", "Next JS", "Tailwind CSS", "CVA", "Tailwind Merge"],
     techExplanation: [
@@ -215,40 +215,56 @@ const htmlProjectDatas = [
     imageCover: Portfolio,
     projectURL: "https://pandagenduts-portfolio-devchallenges.netlify.app/",
     figmaEmbedURL:
-      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp3aRvNn0JQOOUfAGTsyTZf%2Fspace-tourism-website%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DyR0edpx5wOpnRZe5-1",
-    description: ["lorem ipsum dolor sit amet"],
+      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FO7Omgz2iVR7Vox7shf7O8e%2Fportfolio%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DdjtdnlAIzKNYxXGI-1",
+    description: [
+      "Site is responsive across all devices.",
+      "You can compare the Live Site w/ the Figma design.",
+      "A final challenge of Responsive Web Developer from legacy.devchallenges.io",
+    ],
     techUsed: ["HTML", "Vanilla CSS", "Vanilla JavaScript"],
-    techExplanation: ["wordpress elementor custom HTML CSS JS"],
+    // techExplanation: ["Site is built with CSS Grid for the layout and vanilla JavaScript for the portfolio tab filter."],
   },
   {
     title: "Edie Homepage",
     imageCover: EdieHomepage,
     projectURL: "https://pandagenduts-edie-homepage.netlify.app/",
     figmaEmbedURL:
-      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp3aRvNn0JQOOUfAGTsyTZf%2Fspace-tourism-website%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DyR0edpx5wOpnRZe5-1",
-    description: ["lorem ipsum dolor sit amet"],
+      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FahnGupP4JjTdVJDTRfMRF2%2Fedie-homepage%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DdjtdnlAIzKNYxXGI-1",
+    description: [
+      "Site is responsive across all devices.",
+      "You can compare the Live Site w/ the Figma design.",
+      "A landing page challenge of Responsive Web Developer from legacy.devchallenges.io",
+    ],
     techUsed: ["HTML", "Vanilla CSS", "Vanilla JavaScript"],
-    techExplanation: ["wordpress elementor custom HTML CSS JS"],
+    // techExplanation: ["wordpress elementor custom HTML CSS JS"],
   },
   {
     title: "Recipe Blog",
     imageCover: RecipeBlog,
     projectURL: "https://pandagenduts-recipe-page.netlify.app/",
     figmaEmbedURL:
-      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp3aRvNn0JQOOUfAGTsyTZf%2Fspace-tourism-website%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DyR0edpx5wOpnRZe5-1",
-    description: ["lorem ipsum dolor sit amet"],
+      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2jVBTSKeCYF0dIN6fi0stX%2Frecipe-blog-challenge%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DdjtdnlAIzKNYxXGI-1",
+    description: [
+      "Site is responsive across all devices.",
+      "You can compare the Live Site w/ the Figma design.",
+      "A blog page challenge of Responsive Web Developer from legacy.devchallenges.io",
+    ],
     techUsed: ["HTML", "Vanilla CSS", "Vanilla JavaScript"],
-    techExplanation: ["wordpress elementor custom HTML CSS JS"],
+    // techExplanation: ["wordpress elementor custom HTML CSS JS"],
   },
   {
     title: "Checkout Page",
     imageCover: CheckoutPage,
     projectURL: "https://pandagenduts-checkout-page.netlify.app/",
     figmaEmbedURL:
-      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp3aRvNn0JQOOUfAGTsyTZf%2Fspace-tourism-website%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DyR0edpx5wOpnRZe5-1",
-    description: ["lorem ipsum dolor sit amet"],
+      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F4B0x88GhiZvgVlcQPSQ73D%2Fcheckout-page-challenge%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DdjtdnlAIzKNYxXGI-1",
+    description: [
+      "Site is responsive across all devices.",
+      "You can compare the Live Site w/ the Figma design.",
+      "A checkout page challenge of Responsive Web Developer from legacy.devchallenges.io",
+    ],
     techUsed: ["HTML", "Vanilla CSS", "Vanilla JavaScript"],
-    techExplanation: ["wordpress elementor custom HTML CSS JS"],
+    // techExplanation: ["wordpress elementor custom HTML CSS JS"],
   },
 ];
 

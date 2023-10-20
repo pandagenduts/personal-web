@@ -92,7 +92,7 @@ const IFrame = ({
         ></iframe>
         {figmaEmbedURL && (
           <iframe
-            style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+            // style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
             className={`${iFrameShow === "FIGMA" ? "block" : "hidden"}`}
             width="100%"
             height="107%"
