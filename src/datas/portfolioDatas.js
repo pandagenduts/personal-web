@@ -21,14 +21,21 @@ import CheckoutPage from "../assets/Checkout Page.png";
 import EdieHomepage from "../assets/Edie Homepage.png";
 
 const reactProjectDatas = [
-  // {
-  //   title: "Pixel Overture",
-  //   imageCover: PixelOverture,
-  //   projectURL: "https://pandagenduts-space-tourism-2.netlify.app/",
-  //   description: ["A pixel-perfect conversion from Figma w/ Next JS & Tailwind"],
-  //   techUsed: ["React", "Next JS", "Tailwind CSS", "Framer Motion"],
-  //   techExplanation: ["wordpress elementor custom HTML CSS JS"],
-  // },
+  {
+    title: "Pixel Overture",
+    imageCover: PixelOverture,
+    projectURL: "https://pixel-overture-site.vercel.app",
+    figmaEmbedURL:
+      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FiiFFG2TNZXGeSGwHcYEscz%2FPixel-Overture%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DkXoYlrOuZpOEh7Wk-1",
+    description: [
+      "A pixel-perfect conversion from Figma w/ Next JS & Tailwind",
+    ],
+    techUsed: ["React", "Next JS", "Tailwind CSS", "CVA", "Tailwind Merge"],
+    techExplanation: [
+      "Site is built using Next JS and Tailwind CSS",
+      "The clock on header is built using Moment JS and Custom React Hooks (yep, it really shows the correct time 😃)",
+    ],
+  },
   {
     title: "Windbnb",
     imageCover: Windbnb,
