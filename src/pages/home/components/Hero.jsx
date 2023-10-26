@@ -6,16 +6,16 @@ import { MdEmail } from "react-icons/md";
 const Hero = () => {
   return (
     <section className="mx-auto mb-12 flex max-w-3xl flex-col items-center px-4">
-      <div className="shadow-bsRound2 mb-10 w-40 rounded-full duration-700 hover:shadow-none">
+      <div className="mb-10 w-40 rounded-full shadow-bsRound2 duration-700 hover:shadow-none">
         <img
           src={portraitImage}
-          className="shadow-bsRound rounded-full duration-500 hover:shadow-none"
+          className="rounded-full shadow-bsRound duration-500 hover:shadow-none"
           alt="Donny-Profile-Photo"
         />
       </div>
       <h1>Donny Rendi</h1>
       <h4 className="mb-8 font-medium">FrontEnd | React | Next JS Developer</h4>
-      <div className="flex gap-6 text-bluePrimary mb-12">
+      <div className="mb-12 flex gap-6 text-bluePrimary">
         <HyperLink href="#" newTab className="duration-150 hover:scale-95">
           <FaLinkedin className="h-6 w-6" />
         </HyperLink>
@@ -28,23 +28,32 @@ const Hero = () => {
       </div>
       <div>
         <p>
-          A Bachelor of Communication Science which fall in love with frontend programming.
+          A Bachelor of Communication which now a FrontEnd React Next JS
+          developer with about 2 years experience in HTML, CSS and JavaScript.
         </p>
         <p>
-          Used to work with Vanilla CSS and JavaScript when I was a WordPress
-          Developer, thats where I gain enough fundamentals before move on as a
-          Frontend React Developer.
+          Over my career, I've handled dozens of Professional Website accross
+          country. From Indonesia, Singapore, Australia, to Europe and US.
         </p>
         <p>
-          Specializing slicing Figma design with WordPress, while learning front
-          end programming with React JS.
+          I have exceptional attention to detail. Pixel-perfect has always been
+          my approach, which you can see on my personal site (link on
+          Portfolio).
         </p>
         <p>
-          HTML5, CSS3, and JavaScript is my combo skill in this field.
-          Pixel-perfect, and responsiveness has always been my approach to any
-          projects.
+          Besides, I also founded a free Collaboration Community for Developers
+          and Web Designer on Dec 2022. Also the leader to the team of 4
+          Community Managers. To this day, the community had more than 280+
+          members on Telegram and 100+ people has involved in our Events.
         </p>
-        <p className="mb-12">Feel free to check out my works below 🙂</p>
+        <p>
+          A reliable individual with strong communication and teamwork skills.
+        </p>
+        <p className="mb-12">
+          Currently open to any opportunity as a FrontEnd React Next JS
+          Developer. <br />
+          Feel free to check out my works below 🙂
+        </p>
         <p className="m-0 text-xs">
           PS: I didn't do the design, only the development part. Source is
           stated
