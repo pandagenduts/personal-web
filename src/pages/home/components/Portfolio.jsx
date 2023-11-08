@@ -20,7 +20,7 @@ const Portfolio = () => {
   }, [cardCategory]);
 
   return (
-    <section className="container w-full px-4">
+    <section className="container w-full px-4" id="portfolio">
       <h2 className="text-center">Portfolio</h2>
       <div className="mb-10 flex justify-center gap-4">
         <button

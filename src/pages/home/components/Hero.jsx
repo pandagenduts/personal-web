@@ -37,17 +37,13 @@ const Hero = () => {
         </p>
         <p>
           I have exceptional attention to detail. Pixel-perfect has always been
-          my approach, which you can see on my personal site (link on
-          Portfolio).
+          my approach, which you can below.
         </p>
         <p>
           Besides, I also founded a free Collaboration Community for Developers
           and Web Designer on Dec 2022. Also the leader to the team of 4
           Community Managers. To this day, the community had more than 280+
           members on Telegram and 100+ people has involved in our Events.
-        </p>
-        <p>
-          A reliable individual with strong communication and teamwork skills.
         </p>
         <p className="mb-12">
           Currently open to any opportunity as a FrontEnd React Next JS
